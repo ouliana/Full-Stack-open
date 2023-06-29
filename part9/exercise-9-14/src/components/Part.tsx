@@ -42,8 +42,18 @@ const Part = ({coursePart}: {coursePart: CoursePart}) => {
             {coursePart.backgroundMaterial}
           </div>
         </>)
-          
-        break;
+      break;
+      case 'special':
+        extendedPart = (
+            <>
+            <DescriptionDiv>
+            {coursePart.description}
+            </DescriptionDiv>
+            <div>
+              required skills: {coursePart.requirements.join(', ')}
+            </div>
+          </>)
+          break;
     default:
       assertNever(coursePart);
    }
