@@ -1,0 +1,12 @@
+{
+  "notes": [
+    {
+      "id": 0,
+      "content": "note from db"
+    },
+    {
+      "content": "new note",
+      "id": 1
+    }
+  ]
+}
